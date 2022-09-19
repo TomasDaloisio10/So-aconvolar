@@ -124,7 +124,7 @@
 
 .logoPagina:hover{
     transition: all 2s;
-   transform: scale(2);
+   transform: rotate(180deg);
     
 }
 
@@ -345,6 +345,9 @@ inicio css pag tips
         flex-direction: column;
         height: 200px;
         gap: 10px;
+        position: relative;
+
+
     }
     
     .linksContainer{
