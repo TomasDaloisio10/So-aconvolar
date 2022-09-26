@@ -1,0 +1,17 @@
+.iconsFooterContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2d3047;
+
+    .logosFooter {
+        display: flex;
+        width: 40px;
+    
+    
+    }
+}
+
+.radius {
+    border-radius: 50px;
+}
