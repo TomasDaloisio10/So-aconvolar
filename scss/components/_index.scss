@@ -1,0 +1,62 @@
+/* inicio de css index  */
+
+.bodyIndex{
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+    "navIndex"
+    "mainIndex"
+    "footerIndex"
+    ;
+    .navbarHeader{
+        grid-area: navIndex;
+    }
+    .indexMainContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        grid-area: mainIndex;
+        .videoMain {
+            width: 100%;
+            z-index: 1;
+        }
+        .indexMainContent {
+            width: 85%;
+            align-self: center;
+            h2 {
+                @include title-style(3rem);
+            }
+            .parrafoMainIndex {
+                font-family: $font-family-text;
+                font-size: 2rem;
+                padding-bottom: 10vh;
+                padding-top: 5vh;
+            }
+        }
+    }
+    .footerIndex{
+        grid-area: footerIndex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bodyIndex{
+        .indexMainContainer {
+            .indexMainContent {
+                h2 {
+                    @include title-style(3rem);
+                }
+                .parrafoMainIndex {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+

@@ -1,0 +1,53 @@
+.tipsMain{
+    width: 100%;
+
+    .tipsLista{
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5vh 5vw 20vh 5vw;
+        font-size: 2rem;
+        text-align: left;
+        gap: 3vh;
+        li{
+            padding: 1vh;
+            width: 300px;
+            background-color: map-get($paleta, rosa-oscuro );
+            border-radius: 10px;
+            &:hover{
+                transition: all 1s;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tipsMain{
+        .tipsLista{
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 5vh 5vw 20vh 5vw;
+            font-size: 1.5rem;
+            text-align: left;
+            gap: 3vh;
+            li{
+                padding: 1vh;
+                width: 200px;
+                background-color: map-get($paleta, rosa-oscuro );
+                border-radius: 10px;
+                &:hover{
+                    transition: all 1s;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

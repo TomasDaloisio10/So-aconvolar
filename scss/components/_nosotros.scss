@@ -1,0 +1,22 @@
+.fotosParis {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    img{
+        display: flex;
+        justify-content: center;
+        height: 300px;
+        width: 300px;
+        border-radius: 70px;
+        margin-bottom: 20px;
+        &:hover{
+            transform: scale(1.1);
+            transition: all 1s;
+        }
+    }
+}
+.textContainerNosotros{
+    padding: 5vh;
+    text-align: center;
+}

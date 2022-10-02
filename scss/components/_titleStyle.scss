@@ -1,0 +1,14 @@
+.titleContainer{
+    margin-top: 5vh;
+    text-align: center;
+    h1{
+        @include title-style(3rem);
+    }
+}
+@media screen and (max-width: 768px) {
+    .titleContainer{
+        h1{
+            @include title-style(2rem);
+        }
+    }
+}

@@ -1,15 +1,14 @@
-@import "./navbar";
-@import "./footer";
-@import "./tips";
+@import "./variables";
+@import "./mixins";
 @import "./normalize";
-
-
-
-
-
-
-
-
+@import "./components/navbar";
+@import "./components/footer";
+@import "./components/tips";
+@import "./components/index";
+@import "./components/contacto";
+@import "./components/nosotros";
+@import "./components/destinos";
+@import "./components/titleStyle";
 
 
 

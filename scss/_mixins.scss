@@ -1,0 +1,10 @@
+@mixin title-style ($font-value){
+    word-wrap: break-word;
+    text-align: center;
+    color: map-get($paleta, gris-claro );
+    font-size: $font-value;
+}
+
+.border-buttom-style{
+    border-bottom: 1px solid;
+}

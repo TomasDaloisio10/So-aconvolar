@@ -1,0 +1,14 @@
+.iconsFooterContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: map-get($paleta, violeta-oscuro );
+    .logosFooter {
+        display: flex;
+        width: 40px;
+    }
+    .radius {
+        border-radius: 50px;
+    }
+}
+

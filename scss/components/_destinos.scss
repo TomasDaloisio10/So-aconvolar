@@ -1,0 +1,54 @@
+.bodyDestinos{
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+    "navDestinos"
+    "mainDestinos"
+    "footerDestinos"
+    ;
+    .navDestinos{
+        grid-area: navDestinos;
+    }
+    .contenedormaindestino {
+        padding: 0 5vw;
+        height: 100%;
+        width: 100%;
+        grid-area: mainDestinos;
+        .parrafoDestino {
+            font-family: $font-family-text;
+            font-size: 2rem;
+            padding-bottom: 5vh;
+            padding-top: 3vh;
+        }
+        .contentImgDestino {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .imgDestino {
+                height: 300px;
+                width: 300px;
+                border-radius: 70px;
+                margin-bottom: 20px;
+                &:hover{
+                    transition: all 1s;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .footerDestinos{
+        grid-area: footerDestinos ;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bodyDestinos{
+        .contenedormaindestino {
+            .parrafoDestino {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+}

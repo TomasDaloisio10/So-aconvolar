@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="keywords" content="viajes planificar planear">
+    <meta name="description" content="Completa este formulario para poder contactarte con los administradores de la pagina">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../assets/images/favicomviaje.png" type="image/x-icon">
-    <title>Soña con viajar</title>
+    <title>Soña con viajar || contacto</title>
 </head>
-
 <body>
-
-    <!-- inicio header  -->
-
-
     <header class="navbarContainer">
-
         <div class="containerLogo">
-            <img class="logoPagina" src="../assets/images/LOGOPAGINA.png" alt="logopagina">
+            <img class="logoPagina" src="../assets/images/LOGOPAGINA.png" alt="logo pagina">
         </div>
-
         <nav class="navBar">
             <ul class="linksContainer">
                 <li><a class="linksNavBar" href="../index.html">INICIO</a></li>
@@ -28,110 +22,57 @@
                 <li><a class="linksNavBar" href="../pages/tips.html">TIPS</a></li>
                 <li><a class="linksNavBar" href="../pages/nosotros.html">NOSOTROS</a></li>
                 <li><a class="linksNavBar linkClick" href="../pages/contacto.html">CONTACTO</a></li>
-
             </ul>
-        </nav>
-
-
-
     </header>
-
-    <!-- fin de header -->
-
-
-    <!-- inicio main  -->
     <main>
-        <h1>FORMULARIO CONTACTO</h1>
-
+        <div class="titleContainer">
+            <h1>FORMULARIO CONTACTO</h1>
+        </div>
         <form class="miFormulario" autocomplete="off">
-
-            <fieldset>
-
-                <legend class="tituloFormulario">INFORMACION CONTACTO</legend>
-                Sexo
-
+            <h3>Sexo</h3>
+            <div class="inputCheckContainer">
                 <div>
-                    HOMBRE
-
-                    <input type="radio" name="sexo" value="hombre">
+                    <label for="hombre">HOMBRE</label>
+                    <input type="radio" id="hombre" name="sexo" value="hombre">
                 </div>
-
                 <div>
-                    MUJER
-                    <input type="radio" name="sexo" value="hombre">
+                    <label for="mujer">MUJER</label>
+                <input type="radio" id="mujer" name="sexo" value="mujer">
                 </div>
-                <br>
-                <br>
-
-                <label for="Nombre">NOMBRE</label>
-                <br>
-                <input type="text" placeholder="Escribe tu nombre" id="Nombre">
-                <br>
-                <label for="Apellido">APELLIDO</label>
-                <br>
-                <input type="text" placeholder="Escribe tu apellido" id="Apellido">
-                <br>
-                <br>
-
-                ¿ TENES DUDAS SOBRE TU VIAJE ?
-                <br>
-
+            </div>
+            <div class="inputContainer">
+                <label for="nombre">NOMBRE</label>
+                <input type="text" placeholder="Escribe tu nombre" id="nombre">
+            </div>
+            <div class="inputContainer">
+                <label for="apellido">APELLIDO</label>
+                <input type="text" placeholder="Escribe tu apellido" id="apellido">
+            </div>
+            <div>
+                <label for="pregunta">¿ TENES DUDAS SOBRE TU VIAJE ?</label>
                 <select name="Tenes dudas sobre como armar tu viaje ?" id="pregunta">
                     <option value="respuesta">SI</option>
                     <option value="respuesta">NO</option>
                     <option value="respuesta">OTRA CONSULTA</option>
-
                 </select>
-
-                <br>
-                <br>
-
-
-                ESCRIBINOS TU MENSAJE
-                <br>
-
-                <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
-
-                <br>
-                <br>
-
-                <input class="botonEnviar" type="submit" name="ENVIAR" id="enviardatos">
-                <input class="botonReset" type="reset" value="resetear">
-
-            </fieldset>
-
-
-
+            </div>
+                
+            <div class="inputContainer">
+                <label for="mensaje">ESCRIBINOS TU MENSAJE</label>
+                <textarea name="Mensaje" id="mensaje"></textarea>
+            </div>
+            <div class="buttonsFormContainer">
+                <input class="button" type="submit" name="ENVIAR" id="enviardatos">
+                <input class="button" type="reset" value="resetear">
+            </div>
         </form>
-
     </main>
-
-    <!-- fin de main  -->
-
-    <!-- inicio footer  -->
-
-
-
     <footer>
-
-
-
-
         <div class="iconsFooterContainer">
-            <img class="logosFooter" src="../assets/images/instagram.svg" alt="logoface">
-            <img class="logosFooter" src="../assets/images/facebook.svg" alt="logoinstagram">
-            <img class="logosFooter" src="../assets/images/LOGOPAGINA.png" alt="logopagina">
+            <img class="logosFooter" src="../assets/images/instagram.svg" alt="logo facebook">
+            <img class="logosFooter" src="../assets/images/facebook.svg" alt="logo instagram">
+            <img class="logosFooter radius" src="../assets/images/LOGOPAGINA.png" alt="logo pagina">
         </div>
-
     </footer>
-
-
-
-
-
-    <!-- fin de footer  -->
-
 </body>
-
-
 </html>

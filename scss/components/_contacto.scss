@@ -1,0 +1,44 @@
+.miFormulario{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 10vh 20vw;
+    h3{
+        font-weight: 100;
+        @extend .border-buttom-style;
+    }
+    .inputContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        input, textarea{
+            border:none;
+            border-bottom: 1px solid;
+        }
+        textarea{
+            height: 5vh;
+        }
+    }
+    .inputCheckContainer{
+        display: flex;
+        justify-content: center;
+        gap: 3vw;
+    }
+    .buttonsFormContainer{
+        display: flex;
+        justify-content: center;
+        gap: 3vw;
+        .button{
+            padding: 7px 20px;
+            font-size: 1.1rem;
+            color: map-get($paleta, blanco );
+            background-color: map-get($paleta, violeta-oscuro );
+            border-radius: 10px;
+            &:hover{
+                transition: all 0.7s;
+                background-color: map-get($paleta, blanco );
+                color: map-get($paleta, violeta-oscuro )
+            }
+        }
+    }
+}
