@@ -6,9 +6,15 @@
     .logosFooter {
         display: flex;
         width: 40px;
+        padding: 2vh 0;
+        &:hover{
+            transition: all 1s;
+            transform: scale(1.1);
+            
+        }
     }
     .radius {
-        border-radius: 50px;
+        border-radius: 20px;
     }
 }
 

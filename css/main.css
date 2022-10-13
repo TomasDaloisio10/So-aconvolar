@@ -10,6 +10,11 @@
   text-decoration: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
 
+body {
+  background-image: url("https://wallpaperaccess.com/full/1091589.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .navbarContainer {
   display: flex;
   flex-direction: row;
@@ -91,9 +96,13 @@
   background-color: #2d3047; }
   .iconsFooterContainer .logosFooter {
     display: flex;
-    width: 40px; }
+    width: 40px;
+    padding: 2vh 0; }
+    .iconsFooterContainer .logosFooter:hover {
+      transition: all 1s;
+      transform: scale(1.1); }
   .iconsFooterContainer .radius {
-    border-radius: 50px; }
+    border-radius: 20px; }
 
 .tipsMain {
   width: 100%; }
